@@ -1,0 +1,61 @@
+<resources>
+
+
+    <!-- SplashScreenActivity-->
+    <dimen name="logowidth">250dp</dimen>
+    <dimen name="splashmargin">8dp</dimen>
+    <dimen name="Margin">28dp</dimen>
+
+    <!-- WelcomeScreenActivity-->
+    <dimen name="Welcomepadding">10dp</dimen>
+    <dimen name="Welcometext">18sp</dimen>
+    <dimen name="Welcometoolbartext">15sp</dimen>
+    <dimen name="Welcomelogowidth">250dp</dimen>
+    <dimen name="Welcomemargin">16sp</dimen>
+
+    <!-- ConnectToGithubActivity/ConnectToBitbucketActivity-->
+    <dimen name="ToolbarArrow">25dp</dimen>
+    <dimen name="Buttonmargin">25dp</dimen>
+    <dimen name="ButtonWidth">80dp</dimen>
+    <dimen name="ButtonHeight">50dp</dimen>
+    <dimen name="Tvpadding">10dp</dimen>
+    <dimen name="fieldHead">35dp</dimen>
+    <dimen name="fieldDesc">45dp</dimen>
+    <dimen name="Headingtextsize">22sp</dimen>
+    <dimen name="Fieldtextsize">16sp</dimen>
+    <dimen name="Fieldtextdescsize">14sp</dimen>
+    <dimen name="Headimage_size">50dp</dimen>
+
+
+    <!-- HerokuActivity-->
+    <dimen name="Headingsize">22sp</dimen>
+    <dimen name="label_size">14sp</dimen>
+    <dimen name="btn_top">30dp</dimen>
+    <dimen name="label_top">10dp</dimen>
+    <dimen name="margin_start">15dp</dimen>
+    <dimen name="image_size">70dp</dimen>
+
+    <!-- fragment_home_screen-->
+    <dimen name="margin_start1">20dp</dimen>
+    <dimen name="Heading">28sp</dimen>
+    <dimen name="label_top1">20dp</dimen>
+    <dimen name="label_size1">20dp</dimen>
+
+    <!-- activity_viewprofile-->
+    <dimen name="margin_start2">20dp</dimen>
+    <dimen name="margin_end2">20dp</dimen>
+    <dimen name="label_size2">18sp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_bottom">20dp</dimen>
+    <dimen name="profile_size">80dp</dimen>
+    <dimen name="text_size">20dp</dimen>
+    <dimen name="margin_top1">10dp</dimen>
+    <dimen name="margins_start">16dp</dimen>
+    <dimen name="margins_top">32dp</dimen>
+    <dimen name="scroll_bottom">200dp</dimen>
+    <dimen name="back_button">20dp</dimen>
+
+
+
+
+</resources>

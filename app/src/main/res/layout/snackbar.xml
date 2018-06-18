@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/snackbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="top"
+        android:background="@color/colorBlack"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="horizontal">
+
+
+
+        <TextView
+            android:id="@+id/sndialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:layout_marginStart="20dp"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:text="No internet connection"
+            android:textColor="@color/colorWhite" />
+        <Button
+            android:id="@+id/snretry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorPrimary"
+            android:text="Retry"/>
+    </LinearLayout>
+
+
+</LinearLayout>

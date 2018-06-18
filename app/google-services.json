@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "896481194211",
+    "firebase_url": "https://justops-7ab94.firebaseio.com",
+    "project_id": "justops-7ab94",
+    "storage_bucket": "justops-7ab94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896481194211:android:5103241db97a83d1",
+        "android_client_info": {
+          "package_name": "com.cog.justdeploy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896481194211-rh11otglfr4tn9s8b0u7b42bgiorfp9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cog.justdeploy",
+            "certificate_hash": "0cbbf37f892587a6c1faa07a15e1aa385a950db8"
+          }
+        },
+        {
+          "client_id": "896481194211-t8si5sg6m5v6f3l6q3vulsalc46e2psk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "896481194211-t8si5sg6m5v6f3l6q3vulsalc46e2psk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxpwQiKhSI5hYBrQ7vdH-ZkD3jUHl0qBY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896481194211-t8si5sg6m5v6f3l6q3vulsalc46e2psk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "896481194211-79vbe9rk50qqnses1b3m99s1533k6qo7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.cogzidel.JustDeploy"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrange"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackArrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/str_tvEdit"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="3dp"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/profile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/civCameraIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|center_horizontal"
+                android:alpha="0.9"
+                android:background="@android:color/transparent"
+                android:src="@drawable/cameraicon"
+                android:visibility="gone" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cimgUserprofile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:alpha="0.6" />
+
+        </FrameLayout>
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvUserName"
+            android:layout_marginTop="30dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.cog.justdeploy.utils.CustomTextInputLayout
+                        android:id="@+id/tvFirstNameLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:focusable="false"
+                        android:theme="@style/TextLabel"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout5">
+
+                        <EditText
+                            android:id="@+id/etFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:layout_marginBottom="-5dp"
+                            android:backgroundTint="#fff"
+
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:ellipsize="end"
+                            android:foregroundTint="#fff"
+                            android:hint="@string/str_etFirstName"
+                            android:imeOptions="flagNavigateNext"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </com.cog.justdeploy.utils.CustomTextInputLayout>
+
+                    <com.cog.justdeploy.utils.CustomTextInputLayout
+                        android:id="@+id/tvLastNameLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvFirstNameLabel"
+                        android:layout_marginBottom="15dp"
+                        android:theme="@style/TextLabel"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout5">
+
+                        <EditText
+                            android:id="@+id/etLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:layout_marginBottom="-5dp"
+                            android:backgroundTint="#fff"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+                            android:foregroundTint="#fff"
+                            android:hint="@string/str_etLastName"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </com.cog.justdeploy.utils.CustomTextInputLayout>
+
+                    <com.cog.justdeploy.utils.CustomTextInputLayout
+                        android:id="@+id/tvEmailId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvLastNameLabel"
+                        android:layout_marginBottom="15dp"
+                        android:clickable="false"
+                        android:singleLine="true"
+                        android:theme="@style/TextLabel"
+                        app:errorTextAppearance="@style/error_appearance"
+                        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout5">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="54dp"
+                            android:layout_marginBottom="-5dp"
+                            android:backgroundTint="#fff"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@1234567890."
+                            android:foregroundTint="#fff"
+                            android:hint="@string/str_etEmail"
+                            android:imeOptions="actionDone"
+                            android:inputType="textEmailAddress"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textColor="#fff"
+                            android:textColorHint="#fff"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </com.cog.justdeploy.utils.CustomTextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvEmailId" />
+                </RelativeLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/buttonbackroundgreen"
+            android:elevation="10dp"
+            android:shadowColor="#fff"
+            android:text="@string/str_btnSave"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:translationZ="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

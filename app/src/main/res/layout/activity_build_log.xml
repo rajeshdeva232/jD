@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cog.justdeploy.activity.BuildLogActivity">
+
+    <RelativeLayout
+        android:id="@+id/ltAppbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:elevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal"
+                    android:paddingEnd="20dp">
+
+                    <ImageView
+                        android:id="@+id/ltlogo"
+                        android:layout_width="180dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/jdwhitelogo"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivBackarrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/backarrow"
+                    android:visibility="gone" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="15dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        android:src="@drawable/logohome"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBuildlog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="BUILD LOG"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:elevation="12dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:id="@+id/tvProjectBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:text="ORM Bot"
+                                android:textColor="#355723"
+                                android:textSize="18sp" />
+
+                            <Button
+                                android:id="@+id/tvStatusBuild"
+                                android:layout_width="70dp"
+                                android:layout_height="20dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/curve"
+                                android:text="success"
+                                android:textColor="#fff"
+                                android:textSize="10sp" />
+
+                            <View
+                                android:id="@+id/view"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/tvProjectBuild"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorPrimary"
+                                android:visibility="invisible" />
+
+                            <TextView
+                                android:id="@+id/tvFinishBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/view"
+                                android:layout_marginTop="5dp"
+                                android:text="Finished:"
+                                android:visibility="gone"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:visibility="gone"
+                                android:id="@+id/tvFinishedBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/view"
+                                android:layout_marginTop="5dp"
+                                android:text="10 minutes ago"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvTimeBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/tvFinishBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="Time Taken:"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvTimingBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tvFinishedBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="03:50"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvNoOfDeployBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/tvTimeBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="No of Deploys:"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvNoOfDeploysBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tvTimingBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="05"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvDeployByBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/tvNoOfDeployBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="Deployed by:"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/tvDeployedByBuild"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_below="@+id/tvNoOfDeploysBuild"
+                                android:layout_marginTop="5dp"
+                                android:text="John"
+                                android:textSize="14sp" />
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="30dp"
+                        android:elevation="12dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RelativeLayout
+                                android:id="@+id/rlcontaincer"
+                                android:layout_width="40dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:background="@color/white">
+
+                                <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+                                    android:id="@+id/progressLoader"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    app:loader_animDur="1000"
+                                    app:loader_noOfDots="3"
+                                    app:loader_circleRadius="3dp"
+                                    app:loader_dotsDist="3dp"
+                                    app:loader_selectedRadius="3dp"
+                                    app:loader_defaultColor="@color/colorPrimary"
+                                    app:loader_selectedColor="@color/paleorange"
+                                    app:loader_expandOnSelect="false"
+                                    app:loader_isSingleDir="false"
+                                    android:visibility="visible"
+                                    app:loader_showRunningShadow="true"
+                                    app:loader_firstShadowColor="@color/colorPrimary"
+                                    app:loader_secondShadowColor="@color/paleorange"/>
+
+                                <ImageView
+                                    android:id="@+id/img_arrow"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/animated_vector_check"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:id="@+id/tv_startContainer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:text="Build Initiating" />
+
+                                <Chronometer
+                                    android:id="@+id/tv_timer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:text="00:50" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_container1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:elevation="12dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/rlcontaincer1"
+                                android:layout_width="40dp"
+                                android:gravity="center"
+                                android:layout_height="match_parent"
+                                android:background="@color/white">
+
+                                <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+                                    android:id="@+id/progressLoader1"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    app:loader_animDur="1000"
+                                    app:loader_noOfDots="3"
+                                    app:loader_circleRadius="3dp"
+                                    app:loader_dotsDist="3dp"
+                                    app:loader_selectedRadius="3dp"
+                                    app:loader_defaultColor="@color/colorPrimary"
+                                    app:loader_selectedColor="@color/paleorange"
+                                    app:loader_expandOnSelect="false"
+                                    app:loader_isSingleDir="false"
+                                    android:visibility="visible"
+                                    app:loader_showRunningShadow="true"
+                                    app:loader_firstShadowColor="@color/colorPrimary"
+                                    app:loader_secondShadowColor="@color/paleorange"/>
+
+                                <ImageView
+                                    android:id="@+id/img_arrow1"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/animated_vector_check"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_marginBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+
+
+                            <TextView
+                                android:id="@+id/tv_startContainer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:text="In Progress" />
+
+                            <Chronometer
+                                android:id="@+id/tv_timer1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:text="00:50" />
+                        </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cv_container2"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="0dp"
+                        android:elevation="12dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:id="@+id/rlcontaincer2"
+                            android:layout_width="40dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+                            <com.agrawalsuneet.dotsloader.loaders.LinearDotsLoader
+                                android:id="@+id/progressLoader2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                app:loader_animDur="1000"
+                                app:loader_noOfDots="3"
+                                app:loader_circleRadius="3dp"
+                                app:loader_dotsDist="3dp"
+                                app:loader_selectedRadius="3dp"
+                                app:loader_defaultColor="@color/colorPrimary"
+                                app:loader_selectedColor="@color/paleorange"
+                                app:loader_expandOnSelect="false"
+                                app:loader_isSingleDir="false"
+                                android:visibility="visible"
+                                app:loader_showRunningShadow="true"
+                                app:loader_firstShadowColor="@color/colorPrimary"
+                                app:loader_secondShadowColor="@color/paleorange"/>
+
+                            <ImageView
+                                android:id="@+id/img_arrow2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_centerVertical="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/animated_vector_check"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp">
+
+                            <TextView
+                                android:id="@+id/tv_startContainer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="10dp"
+                                android:text="Deploying Build" />
+
+                            <Chronometer
+                                android:id="@+id/tv_timer2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:text="00:50" />
+                        </RelativeLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <Button
+                        android:id="@+id/btn_dashboard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/ripple_effect_darkgreen"
+                        android:text="Back to Dashboard"
+                        android:textColor="#FFF"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

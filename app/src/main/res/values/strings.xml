@@ -1,0 +1,137 @@
+<resources>
+
+    <!-- WelcomeScreenActivity-->
+    <string name="str_tv_Wlogin">Log In</string>
+    <string name="str_btn_welcomegetStarted">Get Started</string>
+    <string name="str_tv_welcomecontent">Rapid deployment of High speed Core</string>
+
+    <!-- NavigationdrawerActivity-->
+    <string name="str_nav_item_startDeploy">Start Deploy</string>
+    <string name="str_nav_item_profile">Profile</string>
+    <string name="str_nav_item_logout">Log out</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="str_nav_header_username">MaryBoo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="steps_to_deploy">Steps To Deploy</string>
+    <string name="str_nav_delete">Delete</string>
+
+    <!-- ConnectHeroku-->
+    <string name="str_connect_heroku">Connect Heroku</string>
+    <string name="str_token">Token</string>
+    <string name="str_App_name">AppName</string>
+    <string name="str_btn_WgetStarted">Get Started</string>
+
+    <!-- ConnectSourceCode-->
+    <string name="str_connect_your_source_code">Connect your Source code</string>
+    <string name="str_github">GITHUB</string>
+    <string name="str_bitbuket">bitbuket</string>
+
+    <!-- fragment_home_screen_-->
+    <string name="str_steps_to_deploy">Steps To Deploy </string>
+    <string name="str_1">1.</string>
+    <string name="str_2">2.</string>
+    <string name="str_3">3.</string>
+    <string name="str_4">4.</string>
+    <string name="str_log_in_to_githubbitbuket">Log in to Github/Bitbuket</string>
+    <string name="str_chose_repository_name">Chose repository name</string>
+    <string name="str_create_token">Create Token</string>
+    <string name="str_deploy_tour_target">Deploy Your Target</string>
+
+    <!-- ConnectToGithubActivity-->
+    <string name="str_tv_ConnectGitNext">Next</string>
+    <string name="str_tv_ConnectGit">Connect Github</string>
+    <string name="str_tv_ConnectGitRep">Repository Name</string>
+    <string name="str_tv_ConnectGitRepget">Select Repository</string>
+    <string name="str_tv_ConnectGitUsername">Github Username</string>
+    <string name="str_tv_ConnectGitUsernameget">Username</string>
+
+    <!-- ConnectToBitbucketActivity-->
+    <string name="str_tv_ConnectBitNext">Next</string>
+    <string name="str_tv_ConnectBit">Connect Bitbucket</string>
+    <string name="str_tv_ConnectBitRep">Repository Name</string>
+    <string name="str_tv_ConnectBitRepget">Select Repository</string>
+    <string name="str_tv_ConnectBitUsername">Bitbucket Username</string>
+    <string name="str_tv_ConnectBitUsernameget">Username</string>
+
+    <!-- HomeScreenFragment-->
+    <string name="str_tv_connect_source_code">Connect your Source code</string>
+    <string name="str_btn_github">GITHUB</string>
+    <string name="str_btn_bitbucket">BITBUCKET</string>
+
+    <!-- FragmentViewScreen-->
+    <string name="str_MobileNo">9876543210</string>
+    <string name="str_MobileNoLabel">Mobile Number</string>
+    <string name="str_EmailId">maryboo@gmail.com</string>
+    <string name="str_LastName">Boo</string>
+    <string name="str_LastNameLabel">Last Name</string>
+    <string name="str_FirstName">Mary</string>
+    <string name="str_FirstNameLabel">First Name</string>
+    <string name="str_UserName">Mary Boo</string>
+    <string name="str_Email_id">Email ID</string>
+    <string name="str_save">SAVE</string>
+
+    <!-- GithubRepoActivity-->
+    <string name="str_tv_gitRepo">Github Repo</string>
+    <string name="str_tv_gitrepo">spacedrizzle-pro</string>
+    <string name="str_tv_gitHerokuapp">sd-pro</string>
+    <string name="str_tv_gitstatus">Status  - </string>
+    <string name="str_tv_gitgetstatus">In progress</string>
+    <string name="str_tv_gitline">-</string>
+    <string name="str_btn_gitdeploy">Deploy</string>
+
+    <!-- BitbucketRepoActivity-->
+    <string name="str_tv_bitRepo">Bitbucket Repo</string>
+    <string name="str_tv_bitrepo">spacedrizzle-pro</string>
+    <string name="str_tv_bitHerokuapp">sd-pro</string>
+    <string name="str_tv_bitline">-</string>
+    <string name="str_tv_bitgetstatus">In progress</string>
+    <string name="str_tv_bitstatus">Status  - </string>
+    <string name="str_btn_bitdeploy">Deploy</string>
+
+
+
+    <!-- New Version-->
+    <!-- activity_viewprofile-->
+    <string name="str_etFirstName">First Name</string>
+    <string name="str_etLastName">Last Name</string>
+    <string name="str_etEmail">Email</string>
+    <string name="str_btnSignout">SIGN OUT</string>
+    <string name="str_btnSave">Save</string>
+    <string name="str_tvView">View Profile</string>
+    <string name="str_tvEdit">Edit Profile</string>
+
+    <!-- activity_main-->
+    <string name="app_name">JustDeploy</string>
+    <string name="str_tvPlatform">GitHub</string>
+
+
+    <!-- Platformcard-->
+    <string name="str_tvStatus">Success</string>
+    <string name="str_tvProjectname">OrmBot</string>
+    <string name="str_tvLabletime">Last Update </string>
+    <string name="str_tvLog">10 hours</string>
+    <string name="str_tvTimeago">ago</string>
+    <string name="deploy_log"><u>View Deploy Log</u></string>
+    <string name="str_btnDeply">Deploy</string>
+
+
+    <!-- Platformcard-->
+    <string name="str_tvMessage">Are you sure you want to Sign Out?</string>
+    <string name="str_ok">Yes</string>
+    <string name="str_cancel_desc">No</string>
+    <string name="str_close">Close</string>
+    <string name="str_tvInternet">Internet Required</string>
+    <string name="str_tvInternetmessage">Please Turn On Internet connection</string>
+
+
+
+    <!-- Platformcard-->
+    <string name="str_tvMessage1">Are you sure you want to deploy?</string>
+    <string name="str_cancel_desc1">No</string>
+
+    <!-- Platformcard-->
+    <string name="str_delete">Are you sure you want to delete?</string>
+    <string name="str_oops">Oops! Something went Wrong</string>
+
+</resources>

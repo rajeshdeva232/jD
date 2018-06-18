@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f85729</color>
+    <color name="colorPrimaryDark">#f85729</color>
+    <color name="colorAccent">#f85729</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000</color>
+    <color name="appColor">#355723</color>
+    <color name="navtext">#737373</color>
+    <color name="Fieldtext">#414141</color>
+    <color name="Fieldtextdesc">#737373</color>
+    <color name="hintcolor">#FF868786</color>
+    <color name="edititext">#FF0000</color>
+    <color name="linecolor">#D8D8D8</color>
+    <color name="view">#DCDCDC</color>
+    <color name="paleorange">#FFBC86</color>
+    <color name="pending">#ff8c00</color>
+    <color name="light">#e6e6e6</color>
+    <color name="red">#FF0000</color>
+    <!--<color name="red">#f10b59</color>-->
+    <color name="green">#377303</color>
+    <color name="ready">#FF8c00</color>
+
+
+    //new color
+    <color name="colorOrange">#f85729</color>
+    <color name="sucess">#8ec447</color>
+    <color name="trans">#00000000</color>
+    <color name="shade">#FF9EB480</color>
+
+</resources>
